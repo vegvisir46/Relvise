@@ -37,18 +37,34 @@ body {
 
 /* ______________________________________________________________________________________*/
 .wrapper {
-    max-height: 100%;
+    min-height: 100%;
     overflow: hidden;
+    /* footer вниз */
+    display: flex;
+    flex-direction: column;
 }
 
 ._container {
     max-width: 1046px;
-    padding: 0 15px;
-    margin: 0 auto;
+    padding: 0px 15px;
+    margin: 0px auto;
     box-sizing: content-box;
 }
 
-/* ___________ШАПКА______________________________________________________________________*/
+._ibg {
+    position: relative;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+/* ___________HEADER______________________________________________________________________*/
 
 .header {
     position: absolute;
@@ -125,3 +141,72 @@ body {
         font-size: 18px;
     }
 }
+
+/* ___________MAIN______________________________________________________________________*/
+
+.page {
+    flex: 1 1 auto;
+}
+
+.page__main-block {
+}
+
+.main-block {
+    position: relative;
+}
+
+.main-block__container {
+}
+
+._container {
+}
+
+.main-block__body {
+    padding: 185px 0 191px 0;
+    position: relative;
+    z-index: 2;
+    max-width: 509px;
+}
+
+.main-block__body > *:not(:last-child) {
+    margin: 0 0 35px 0;
+}
+
+.main-block__title {
+    font-size: 58px;
+    line-height: 137%; /*calc(80 / 58 * 100%)*/
+    font-weight: 800;
+}
+
+.main-block__text {
+    color: #737373;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.main-block__buttons {
+}
+
+.main-block__button {
+}
+
+.main-block__button_border {
+}
+
+.main-block__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* ___________FOOTER______________________________________________________________________*/
+
+.footer {
+
+}
+
+
+/* 1:32:54 */
